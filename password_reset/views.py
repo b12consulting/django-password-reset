@@ -53,7 +53,7 @@ recover_done = RecoverDone.as_view()
 
 
 class Recover(SaltMixin, generic.FormView):
-    case_sensitive = True
+    case_sensitive = False
     form_class = PasswordRecoveryForm
     template_name = 'password_reset/recovery_form.html'
     success_url_name = 'password_reset_sent'
